@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+   <button  id="creaetroom">Create room</button>
+   <button id="leave-room">disconnect</button>
+   <input type="text" placeholder="enter msg">
+   <button id="sendmsg">send</button>
+   <div id="msg-box">
+
+   </div> 
+</body>
+ <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script>
+    let roombutton=document.getElementById('creaetroom')
+    let leavebutton=document.getElementById('leave-room')
+    let msgbutton=document.getElementById('sendmsg')
+    let msgbox=document.getElementById('msg-box')
+    const socket =io('http://localhost:8000')
+    roombutton.addEventListener('click',(event)=>{
+        event.target.disabled=true
+        socket.emit('join-room',123)
+    })
+    msgbutton.addEventListener('click',(event)=>{
+        
+        let message="hello"
+        let roomId=123
+        socket.emit('send-message',{roomId,message})
+        console.log("message send")
+    })
+    
+    socket.on("receive-message", ({sender,message})=>{
+        console.log("message recive")
+        msgbox.innerText=message
+    });
+</script>
+</html>
