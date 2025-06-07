@@ -1,6 +1,6 @@
 function gameSocket(io,socket){
     console.log('User connected:', socket.id);
-    
+
     socket.on('offer',({roomId,offer})=>{
         socket.to(roomId).emit("offer",{offer});
     })
@@ -13,14 +13,14 @@ function gameSocket(io,socket){
         socket.to(roomId).emit('ice-candidate',{candidate})
     })
 
-    socket.on('join-room',(roomid)=>{
-        socket.join(roomid);
-        console.log(`${socket.id} joined room ${roomid}`);
-        socket.to(roomid).emit('user-joined', socket.id);
+    socket.on('join-room',(roomId)=>{
+        socket.join(roomId);
+        console.log(`${socket.id} joined room ${roomId}`);
+        socket.to(roomId).emit('user-joined', socket.id);
     });
 
-    socket.on('send-message',({roomid,message})=>{
-        socket.to(roomid).emit('receive-message',{
+    socket.on('send-message',({roomId,message})=>{
+        socket.to(roomId).emit('receive-message',{
             sender:socket.id,
             message
         })
