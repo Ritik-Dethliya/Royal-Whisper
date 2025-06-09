@@ -66,11 +66,11 @@ Whether you're 8 or 80, the suspense of the thief, the power of the king, and th
 
 - ✅ User Authentication (Login/Signup)
 - ✅ QR Code Scanner for Food Items
-- ✅ Personalized Health Report Generation
+- ✅ 
 - ✅ Admin Dashboard
-- ✅ CRUD Operations
+- ✅ 4 Player Online game
 - ✅ Responsive UI
-- ✅ Dark Mode (if applicable)
+- ✅ Dark Mode 
 
 ---
 
@@ -96,5 +96,15 @@ Whether you're 8 or 80, the suspense of the thief, the power of the king, and th
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/project-name.git
-   cd project-name
+   git clone https://github.com/Ritik-Dethliya/Royal-Whisper.git
+   cd Royal-Whisper
+
+   start backend
+    cd backend
+    npm install
+    node server.js
+
+    start frontend
+        cd frontend
+        npm install
+        npm run dev
