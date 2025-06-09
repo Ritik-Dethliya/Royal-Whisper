@@ -108,3 +108,5 @@ Whether you're 8 or 80, the suspense of the thief, the power of the king, and th
         cd frontend
         npm install
         npm run dev
+
+Enjoy your game
