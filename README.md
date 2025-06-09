@@ -28,13 +28,14 @@
 
 ## 📖 About
 
-Brief explanation of the project. Include:
-- Purpose / Problem it solves
-- Target users
-- Tech approach and motivation
+Royal Whisper is a digital revival of one of India’s most beloved childhood board games — popularly known as "Raja-Mantri-Chor-Sipahi", "Char-Chit", or "Find the Thief". We've reimagined this classic for the modern screen, preserving the thrill, suspense, and joy that once echoed in every gully and classroom.
 
-> Example:
-> "This is a health-focused meal tracking app that allows users to scan food items and generate personalized health reports using the MERN stack."
+## Motivation & Vision
+> The core idea emerged from observing how many elders often feel disconnected from today’s digital-first gaming culture. Royal Whisper is our attempt to give them a reason to smile, relive memories, and bond with younger generations — all while playing a game they’ve always loved.
+
+Whether you're 8 or 80, the suspense of the thief, the power of the king, and the whisper of roles will pull you in.
+
+> 
 
 ---
 
