@@ -5,6 +5,7 @@ const userSchema=Schema({
     useImage:{type:String},
     email:{type:String,require:true},
     phone:{type:Number,maxLength:10},
+    password:{type:String},
     isSubscribe:{type:Boolean,default:false}
 })
 export default model('user',userSchema)

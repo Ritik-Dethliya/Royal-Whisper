@@ -8,5 +8,5 @@ const userRouter=e.Router()
 
 const Salt=10
 userRouter.post('/sign',userSign)
-userRouter.get('login',userLogin)
+userRouter.get('/login',userLogin)
 export default userRouter

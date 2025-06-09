@@ -21,6 +21,7 @@ const io=new Server(httpServer,{
     credentials: true
   }})
 app.use(cros())
+app.use(e.json())
 app.use('/user',userRouter)
 app.use('/game',gameRouter)
 

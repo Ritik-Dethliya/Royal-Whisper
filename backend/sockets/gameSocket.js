@@ -19,6 +19,10 @@ function gameSocket(io,socket){
         socket.to(roomId).emit('user-joined', socket.id);
     });
 
+    socket.on('select-slip',({roomId,slipId})=>{
+        console.log(`${socket.id} select slipt ${slipId}`);
+        socket.to(roomId).emit('slip-selected', {selecter:socket.id,slipId});
+    });
     socket.on('send-message',({roomId,message})=>{
         socket.to(roomId).emit('receive-message',{
             sender:socket.id,
